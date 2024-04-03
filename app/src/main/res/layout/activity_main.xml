@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    tools:context=".MainActivity">
+
+<TextView
+android:id="@+id/titleTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="TO DO LIST APP : NEVER MISS OUT ANYTHING"
+android:textColor="#000000"
+    android:textSize="24sp"
+    android:layout_centerHorizontal="true"
+    android:padding="16dp" />
+
+<EditText
+android:id="@+id/editText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/titleTextView"
+android:hint="Enter a task"
+android:textColor="#000000" />
+
+<Button
+android:id="@+id/addButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/editText"
+android:text="Add Task"
+android:background="#0000FF"
+    android:textColor="#FFFFFF" />
+
+<ListView
+android:id="@+id/listView"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/addButton"
+android:textColor="#000000" />
+
+    </RelativeLayout>
